@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOFUKASHI INDUSTRIES</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    background: #0a0c06;
+    color: #8fa870;
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid #2a3a18;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #c8d8a0;
+  }
+
+  nav a {
+    color: #8fa870;
+    text-decoration: none;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+
+  nav a:hover { color: #c8d8a0; }
+
+  .hero {
+    text-align: center;
+    padding: 100px 40px;
+    border-bottom: 1px solid #2a3a18;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    color: #c8d8a0;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #6a7a50;
+    margin-bottom: 40px;
+  }
+
+  .plugins {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 40px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: #4a5a35;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #2a3a18;
+    padding-bottom: 10px;
+  }
+
+  .plugin-card {
+    border: 1px solid #2a3a18;
+    padding: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.3s;
+  }
+
+  .plugin-card:hover { border-color: #6a7a50; }
+
+  .plugin-name {
+    font-size: 28px;
+    letter-spacing: 6px;
+    color: #c8d8a0;
+    margin-bottom: 8px;
+  }
+
+  .plugin-desc {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #6a7a50;
+    margin-bottom: 16px;
+  }
+
+  .plugin-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #4a5a35;
+    border: 1px solid #2a3a18;
+    padding: 4px 10px;
+    margin-right: 8px;
+  }
+
+  .btn {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #8fa870;
+    border: 1px solid #4a5a35;
+    padding: 12px 24px;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background: #2a3a18;
+    color: #c8d8a0;
+    border-color: #8fa870;
+  }
+
+  .badge {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #4a5a35;
+    border: 1px solid #2a3a18;
+    padding: 3px 8px;
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #2a3a18;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #3a4a25;
+    margin-top: 80px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">YOFUKASHI INDUSTRIES</div>
+  <nav>
+    <a href="#plugins">PLUGINS</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>YOFUKASHI<br>INDUSTRIES</h1>
+  <p>AUDIO TOOLS FOR THE NIGHT SHIFT</p>
+</div>
+
+<div class="plugins" id="plugins">
+  <div class="section-title">// PLUGINS</div>
+
+  <div class="plugin-card">
+    <div>
+      <div class="plugin-name">NOCT FAT <span class="badge">BETA</span></div>
+      <div class="plugin-desc">真空管サチュレーター / コンプレッサー</div>
+      <div>
+        <span class="plugin-tag">VST3</span>
+        <span class="plugin-tag">Windows</span>
+        <span class="plugin-tag">Saturation</span>
+      </div>
+    </div>
+    <a href="#" class="btn">COMING SOON</a>
+  </div>
+</div>
+
+<div class="plugins" id="about">
+  <div class="section-title">// ABOUT</div>
+  <p style="font-size:13px; letter-spacing:2px; line-height:2; color:#6a7a50;">
+    YOFUKASHI INDUSTRIESは深夜のスタジオから生まれた<br>
+    オーディオプラグインレーベルです。<br><br>
+    アナログ機材の温かさとデジタルの精度を追求します。
+  </p>
+</div>
+
+<footer>
+  © 2026 YOFUKASHI INDUSTRIES. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>

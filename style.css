@@ -6,13 +6,30 @@
 
 body{
   background-color: #0d0d0d;
-  background-image: url('背景.png');
+  background-image: 
+    url('背景.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #cec8b8;
   font-family: 'IBM Plex Mono', monospace;
   overflow-x: hidden;
+}
+
+/* 全体に薄いオーバーレイ */
+body::before{
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(13,13,13,0.55);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 全コンテンツをオーバーレイの上に */
+header, section, footer, .bg-section{
+  position: relative;
+  z-index: 1;
 }
 
 .hero{
@@ -50,6 +67,8 @@ body{
   margin: 80px auto;
   text-align: center;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .concept-lead{
@@ -64,7 +83,7 @@ body{
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 2.4;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .products-section{
@@ -75,6 +94,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .product-grid{
@@ -91,16 +112,18 @@ body{
   display: flex;
   align-items: center;
   gap: 30px;
-  border: 1px solid rgba(206,200,184,0.1);
+  border: 1px solid rgba(206,200,184,0.15);
   padding: 30px;
   text-decoration: none;
   color: #cec8b8;
   transition: 0.25s ease;
+  background: rgba(13,13,13,0.4);
+  backdrop-filter: blur(4px);
 }
 
 .product-card:hover{
-  border-color: rgba(206,200,184,0.3);
-  background: rgba(255,255,255,0.02);
+  border-color: rgba(206,200,184,0.4);
+  background: rgba(13,13,13,0.6);
 }
 
 .product-thumb{
@@ -145,6 +168,8 @@ body{
   align-items: center;
   text-align: center;
   padding: 0 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .section-label{
@@ -158,7 +183,7 @@ body{
 
 .about-section p{
   line-height: 2.2;
-  opacity: 0.55;
+  opacity: 0.65;
   font-size: 13px;
   letter-spacing: 1px;
 }
@@ -170,6 +195,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 footer p{
